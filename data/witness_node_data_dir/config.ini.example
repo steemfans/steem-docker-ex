@@ -6,7 +6,7 @@ p2p-max-connections = 200
 
 # Shared file size
 shared-file-size = 64G
-shared-file-dir = /shm/
+#shared-file-dir = /shm/
 
 # A 2-precision percentage (0-10000) that defines the threshold for when to 
 # autoscale the shared memory file. Setting this to 0 disables autoscaling. 
@@ -22,20 +22,26 @@ shared-file-scale-rate = 1000
 flush = 100000
 
 # P2P nodes to connect to on startup (may specify multiple times)
-p2p-seed-node = anyx.io:2001                        # @anyx (CA)
-p2p-seed-node = gtg.steem.house:2001                # @gtg (PL)
-p2p-seed-node = lafonasteem.com:2001                # @lafona (FR)
-p2p-seed-node = seed.roelandp.nl:2001               # @roelandp (FI)
-p2p-seed-node = seed.esteem.ws:2001                 # @good-karma (FI)
-#p2p-seed-node = 176.31.126.187:2001                 # @timcliff (FR)
-p2p-seed-node = seed.thecryptodrive.com:2001        # @thecryptodrive (FI)
-p2p-seed-node = 104.199.118.92:2001                 # @clayop (US?)
-p2p-seed-node = seed.steemviz.com:2001              # @ausbitbank (SE)
-p2p-seed-node = steem-seed.lukestokes.info:2001     # @lukestokes (SE)
-p2p-seed-node = node.mahdiyari.info:2001            # @mahdiyari (FI)
-p2p-seed-node = steemseed-fin.privex.io:2001        # @privex (FI)
-p2p-seed-node = steemseed-se.privex.io:2001         # @privex (SE)
-p2p-seed-node = seed.steemmonsters.com:2001         # @aggroed (SE)
+p2p-seed-node = seed-east.steemit.com:2001 # steemit
+p2p-seed-node = seed-central.steemit.com:2001 # steemit
+p2p-seed-node = seed-west.steemit.com:2001 # steemit
+p2p-seed-node = sn1.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = sn2.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = sn3.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = sn4.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = sn5.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = sn6.steemit.com:2001 # Steemit, Inc.
+p2p-seed-node = seed.justyy.com:2001 # @justyy
+p2p-seed-node = steem-seed.urbanpedia.com:2001 # @fuli
+p2p-seed-node = seed.steem.fans:2001 # @ety001
+p2p-seed-node = seed-1.blockbrothers.io:2001 # @blockbrothers
+p2p-seed-node = 5.189.136.20:2001 # @maiyude
+p2p-seed-node = seed.steemhunt.com:2001 # @steemhunt Location: South Korea
+p2p-seed-node = seed.steemzzang.com:2001 # @zzan.witnesses
+p2p-seed-node = seednode.dlike.io:2001 # @dlike Location Germany
+p2p-seed-node = seed.steemer.app:2001 # @bukio
+p2p-seed-node = seed.supporter.dev:2001 # @dev.supporters
+p2p-seed-node = seed.goodhello.net:2001 # @helloworld.wit
 
 
 # Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
@@ -43,8 +49,8 @@ p2p-seed-node = seed.steemmonsters.com:2001         # @aggroed (SE)
 
 # Endpoint for websocket RPC to listen on
 
-webserver-http-endpoint = 0.0.0.0:8091
-webserver-ws-endpoint = 0.0.0.0:8090
+#webserver-http-endpoint = 0.0.0.0:8091
+#webserver-ws-endpoint = 0.0.0.0:8090
 
 # Endpoint for TLS websocket RPC to listen on
 # rpc-tls-endpoint =
@@ -62,7 +68,8 @@ webserver-ws-endpoint = 0.0.0.0:8090
 # api-user =
 
 # Plugin(s) to enable, may be specified multiple times
-plugin = witness condenser_api network_broadcast_api account_by_key database_api
+# plugin = witness condenser_api network_broadcast_api account_by_key database_api
+plugin = witness
 
 # Defines a range of accounts to track as a json pair ["from","to"] [from,to)
 # track-account-range =
