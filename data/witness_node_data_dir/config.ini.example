@@ -42,6 +42,9 @@ p2p-seed-node = seednode.dlike.io:2001 # @dlike Location Germany
 p2p-seed-node = seed.steemer.app:2001 # @bukio
 p2p-seed-node = seed.supporter.dev:2001 # @dev.supporters
 p2p-seed-node = seed.goodhello.net:2001 # @helloworld.wit
+p2p-seed-node = seed.steemdb.online:2001 # @steem-supporter
+p2p-seed-node = 85.206.162.100:2001:2001 # @xpilar
+
 
 
 # Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
