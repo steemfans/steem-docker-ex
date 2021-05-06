@@ -46,7 +46,6 @@ p2p-seed-node = seed.steemdb.online:2001 # @steem-supporter
 p2p-seed-node = 85.206.162.100:2001:2001 # @xpilar
 
 
-
 # Pairs of [BLOCK_NUM,BLOCK_ID] that should be enforced as checkpoints.
 # checkpoint =
 
